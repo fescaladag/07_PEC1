@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEC1_Ejercicio 2.2</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="main">
+        <img src="./img/logo.png" alt="logo" id="logo">
+        <div id="spinner"></div>
+        <h1>Exchange Rate calculator</h1>
+        <p class="info-txt">Choose the currency and the amounts to get the exchange rate</p>
+        <div class="currency">
+            <select name="currency-one" id="currency-one">
+                <option value="USD">USD</option>
+                <option value="EUR" selected>EUR </option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="CAD">CAD</option>
+                <option value="AUD">AUD</option>
+                <option value="CHF">CHF</option>
+                <option value="CNY">CNY</option>
+                <option value="INR">INR</option>
+                <option value="MXN">MXN</option>
+                <option value="BRL">BRL</option>
+                <option value="ZAR">ZAR</option>
+                <option value="KRW">KRW</option>
+                <option value="RUB">RUB</option>
+                <option value="SEK">SEK</option>
+                <option value="NOK">NOK</option>
+                <option value="SGD">SGD</option>
+                <option value="NZD">NZD</option>
+                <option value="HKD">HKD</option>
+                <option value="TRY">TRY</option>
+                <option value="PLN">PLN</option>
+                <option value="THB">THB</option>
+                <option value="SAR">SAR</option>
+            </select>       
+            <input type="number" id="amount-one" placeholder="0" value="1">
+        </div>
+
+            <div class="swap-rate-container">
+                <button class="btn" id="swap">SWAP</button>
+                <div class="rate" id="rate"></div>
+            </div>
+
+        <div class="currency">
+            <select name="currency-two" id="currency-two">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="CAD">CAD</option>
+                <option value="AUD">AUD</option>
+                <option value="CHF">CHF</option>
+                <option value="CNY">CNY</option>
+                <option value="INR">INR</option>
+                <option value="MXN">MXN</option>
+                <option value="BRL">BRL</option>
+                <option value="ZAR">ZAR</option>
+                <option value="KRW">KRW</option>
+                <option value="RUB">RUB</option>
+                <option value="SEK">SEK</option>
+                <option value="NOK">NOK</option>
+                <option value="SGD">SGD</option>
+                <option value="NZD">NZD</option>
+                <option value="HKD">HKD</option>
+                <option value="TRY">TRY</option>
+                <option value="PLN">PLN</option>
+                <option value="THB">THB</option>
+                <option value="SAR">SAR</option>
+            </select>
+            
+            <input type="number" id="amount-two" placeholder="0">
+
+
+        </div>
+
+
+
+
+        <div class="error">
+            <p id="error-msg"></p>
+            <p id="error-code"></p>
+        </div>
+
+        <div class="atributions">
+            <p><a href="https://www.exchangerate-api.com">Rates By Exchange Rate API</a></p>
+            <p><a href="https://www.flaticon.es/iconos-gratis/cambio-de-divisas" title="cambio de divisas iconos">Cambio de divisas iconos creados por juicy_fish - Flaticon</a></p>
+        </div>
+    </main>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+ <script src="./app.js"></script>   
+</body>
+</html>

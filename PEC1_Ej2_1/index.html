@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>PEC1_Ej2_1</title>
+</head>
+<body>
+     
+
+
+<main class="main">
+    
+    <form id="form">
+        <p>Register with Us</p>
+         <div class="input">
+            <label  class="es-requerido"for="username">Nombre</label>
+            <input type="text" 
+                    id="username" 
+                    name="username" 
+                    title="Utilice solo de 3 a 64 caracetres alfabeticos"
+                    form="form" 
+                    pattern="/^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gim;" 
+                    placeholder="Enter Username" 
+                    aria-describedby="first-name-error"
+                    oninvalid="this.setCustomValidity('Utilice solo de 3 a 64 caracetres alfabeticos.')" 
+                    oninput="this.setCustomValidity('')"
+                    required>
+                    <p class="error-msg">Enter a valid User name</p>
+                    
+         </div>
+
+         <div class="input">
+            <label class="es-requerido" for="mail">Email:</label>
+            <input type="text"  
+                    id="mail" 
+                    name="mail" 
+                    form="form" 
+                    pattern="[a-zA-Z0-9@.]{7,128}" 
+                    placeholder="Enter email" 
+                    oninvalid="this.setCustomValidity('introduzca un correo valido.')" 
+                    oninput="this.setCustomValidity('')"
+                    required>
+                    <p class="error-msg">Enter a valid User name</p>
+        </div>
+
+        <div class="input">
+            <label class="es-requerido" for="password">Password</label>
+            <input type="password" 
+                    id="password" 
+                    name="password" 
+                    form="form" 
+                    maxlength ="64" 
+                    placeholder="Enter Password" 
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[`~!@#\$%\^&\*\(\)_\+\-=\{\}\|\[\]\\:&quot;;'&lt;&gt;?,.\/]).{8,}$"
+                    oninvalid="this.setCustomValidity('introduzca una contraseña valida.')" 
+                    oninput="this.setCustomValidity('')"
+                    required>
+                    <p class="error-msg">Enter a valid User name</p>
+         </div>
+
+         <div class="input">
+            <label class="es-requerido" for="confirm_password">Confirm Password</label>
+            <input 
+                type="text" 
+                id="confirm_password" 
+                name="confirm_password" 
+                form="form" 
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[`~!@#\$%\^&\*\(\)_\+\-=\{\}\|\[\]\\:&quot;;'&lt;&gt;?,.\/]).{8,}$" 
+                placeholder="Enter Password again"  
+                required>
+                <p class="error-msg">Enter a valid User name</p>
+         </div>
+
+         <div class="input">
+            <label class="es-requerido">Edad</label>
+            <input 
+                type="text" 
+                id="edad" 
+                name="edad"  
+                form="formulario"
+                pattern="[0-9]{1,3}" 
+                min="0"
+                max="999"
+                placeholder="Edad"
+                oninput="this.validate(this)"    
+                required>
+                <p class="error-msg">Enter a valid User name</p>
+        </div>
+
+        <div class="button">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>    
+         
+
+
+</main>
+
+<script src="./app.js"></script>
+</body>
+</html>

@@ -10,87 +10,43 @@
      
 
 
-<main class="main">
+<main class="container">
     
-    <form id="form">
-        <p>Register with Us</p>
-         <div class="input">
-            <label  class="es-requerido"for="username">Nombre</label>
-            <input type="text" 
-                    id="username" 
-                    name="username" 
-                    title="Utilice solo de 3 a 64 caracetres alfabeticos"
-                    form="form" 
-                    pattern="/^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gim;" 
-                    placeholder="Enter Username" 
-                    aria-describedby="first-name-error"
-                    oninvalid="this.setCustomValidity('Utilice solo de 3 a 64 caracetres alfabeticos.')" 
-                    oninput="this.setCustomValidity('')"
-                    required>
-                    <p class="error-msg">Enter a valid User name</p>
-                    
+    <form id="form" class="form">
+        <h2>Register with Us</h2>
+
+         <div class="form-control">
+            <label  class="es-requerido"for="username">User Name:</label>
+            <input type="text" id="username" placeholder="Enter Username"/>
+            <small>Enter a valid User name </small>           
          </div>
 
-         <div class="input">
-            <label class="es-requerido" for="mail">Email:</label>
-            <input type="text"  
-                    id="mail" 
-                    name="mail" 
-                    form="form" 
-                    pattern="[a-zA-Z0-9@.]{7,128}" 
-                    placeholder="Enter email" 
-                    oninvalid="this.setCustomValidity('introduzca un correo valido.')" 
-                    oninput="this.setCustomValidity('')"
-                    required>
-                    <p class="error-msg">Enter a valid User name</p>
+         <div class="form-control">
+            <label class="es-requerido" for="email">Email:</label>
+            <input type="text" id="email" placeholder="Enter email"/>
+           <small>Enter a valid Email</small>
         </div>
 
-        <div class="input">
-            <label class="es-requerido" for="password">Password</label>
-            <input type="password" 
-                    id="password" 
-                    name="password" 
-                    form="form" 
-                    maxlength ="64" 
-                    placeholder="Enter Password" 
-                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[`~!@#\$%\^&\*\(\)_\+\-=\{\}\|\[\]\\:&quot;;'&lt;&gt;?,.\/]).{8,}$"
-                    oninvalid="this.setCustomValidity('introduzca una contraseña valida.')" 
-                    oninput="this.setCustomValidity('')"
-                    required>
-                    <p class="error-msg">Enter a valid User name</p>
+        <div class="form-control">
+            <label class="es-requerido" for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter Password" />
+            <small>Enter a valid Password</small>
          </div>
 
-         <div class="input">
-            <label class="es-requerido" for="confirm_password">Confirm Password</label>
-            <input 
-                type="text" 
-                id="confirm_password" 
-                name="confirm_password" 
-                form="form" 
-                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[`~!@#\$%\^&\*\(\)_\+\-=\{\}\|\[\]\\:&quot;;'&lt;&gt;?,.\/]).{8,}$" 
-                placeholder="Enter Password again"  
-                required>
-                <p class="error-msg">Enter a valid User name</p>
+         <div class="form-control">
+            <label class="es-requerido" for="confirm_password">Confirm Password:</label>
+            <input type="text" id="confirm_password" placeholder="Enter Password again"/>
+            <small>Passwords does not match</small>
          </div>
 
-         <div class="input">
+         <div class="form-control">
             <label class="es-requerido">Edad</label>
-            <input 
-                type="text" 
-                id="edad" 
-                name="edad"  
-                form="formulario"
-                pattern="[0-9]{1,3}" 
-                min="0"
-                max="999"
-                placeholder="Edad"
-                oninput="this.validate(this)"    
-                required>
-                <p class="error-msg">Enter a valid User name</p>
+            <input type="text" id="age" placeholder="Age"/>
+            <small>Enter a valid Age</small>
         </div>
 
         <div class="button">
-            <button type="submit">Enviar</button>
+            <button type="submit">Submit</button>
         </div>
     </form>    
          

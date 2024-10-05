@@ -24,7 +24,7 @@ function calculate(){
 
     
 
-    fetch(`https://__open.er-api.com/v6/latest/${currency_one}`)
+    fetch(`https://open.er-api.com/v6/latest/${currency_one}`)
         .then(res => res.json())
         .then(data => {
             console.log(data)

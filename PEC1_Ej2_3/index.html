@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEC1 Ej2.3</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+<div class="currency-container">
+    <label>Pick a currency</label>
+    <select id="currency">
+        <option value="USD" >USD</option>
+        <option value="EUR" >EUR </option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+        <option value="CAD">CAD</option>
+        <option value="AUD">AUD</option>
+        <option value="CHF">CHF</option>
+        <option value="CNY">CNY</option>
+        <option value="INR">INR</option>
+        <option value="MXN">MXN</option>
+        <option value="BRL">BRL</option>
+        <option value="ZAR">ZAR</option>
+        <option value="KRW">KRW</option>
+        <option value="RUB">RUB</option>
+        <option value="SEK">SEK</option>
+        <option value="NOK">NOK</option>
+        <option value="SGD">SGD</option>
+        <option value="NZD">NZD</option>
+        <option value="HKD">HKD</option>
+        <option value="TRY">TRY</option>
+        <option value="PLN">PLN</option>
+        <option value="THB">THB</option>
+        <option value="SAR">SAR</option>
+    </select>       
+</div>
+
+<div id="spinner"></div>
+
+
+<div class="movie-container">
+    <label>Pick a movie:</label>
+    <select id="movie">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+    </select>
+</div>
+
+<ul class="showcase">
+    <li>
+        <div class="seat"></div>
+        <small>N/A</small>      
+    </li>
+
+    <li>
+        <div class="seat selected"></div>
+        <small>Selected</small> 
+    </li>
+
+    <li>
+        <div class="seat ocuupied"></div>
+        <small>Ocuppied</small> 
+    </li>
+</ul>
+
+<div class="container">
+    <div class="screen"></div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>    
+        
+    </div>
+
+    <p class="text">You have selected <span id="count">0</span>   seats for a price of  <span id="total"> 0 </span></p>
+
+    <div class="error">
+        <p id="error-msg"></p>
+        <p id="error-code"></p>
+    </div>
+
+<script src="./app.js"></script>
+</body>
+</html>

@@ -62,6 +62,8 @@ let getTicketPrice = () =>{
 }
 
 
+
+
 //Funcion para calcular el cambio de divisa
 const  updateCurrency = (currency)=>{
 
@@ -74,7 +76,7 @@ const  updateCurrency = (currency)=>{
         .then(data => {
             const rate = data.rates[currency];
             updateDropdownList(rate);
-            ticketPrice = getTicketPrice();
+           // ticketPrice = getTicketPrice();
 
             const resultado = data.result;
             if (resultado =='success'){
@@ -118,6 +120,9 @@ const updateSelectedCount = ()=> {
     //Para almacenar el array en el local storage del navegador
     localStorage.setItem('selectedSeats', JSON.stringify(seatsIndex));
     
+    //obiene el precio de la pelicula seleccionada
+    ticketPrice = getTicketPrice();
+    console.log(ticketPrice);
     count.innerText = seatSeatsCount;
     total.innerText = ` ${(ticketPrice * seatSeatsCount).toFixed(2)}   ${currency.value}`;
 
